@@ -22,6 +22,55 @@ A API também inclui funcionalidades para filtrar filmes por avaliações, comen
  
 ## Iniciando
 
-Para começar basta clonar o repositório:
+Para começar basta clonar o repositório para a pasta do projeto:
 
   `git clone https://github.com/henriquedeantoni/stream-api-challenge.git`
+
+## Endpoints da API
+
+Com auxilio do Swagger para conferencia dos Endpoints
+
+### 1. **Listar Filmes com Paginação**
+
+- **Método:** `GET`
+- **Endpoint:** `/api/movies?pageNumber={pageNumber}&pageSize={pageSize}`
+- **Descrição:** Retorna uma lista de filmes com suporte para paginação.
+
+  **Parâmetros:**
+  - `pageNumber` (int): Número da página (começando de 1).
+  - `pageSize` (int): Número de filmes por página.
+
+### 2. **Obter Filme por ID**
+
+- **Método:** `GET`
+- **Endpoint:** `/api/movies/{id}`
+- **Descrição:** Retorna informações detalhadas de um filme específico.
+
+  **Parâmetros:**
+  - `id` (int): ID do filme.
+
+### 3. **Adicionar Novo Filme**
+
+- **Método:** `POST`
+- **Endpoint:** `/api/movies`
+- **Descrição:** Cria um novo filme.
+
+  **Corpo da Requisição:**
+
+  ```json
+  {
+    "title": "Nome do Filme",
+    "gender": 0,  // Enum Gender: 0 = Action, 1 = Comedy, 2 = Drama, etc.
+    "releaseDate": "yyyy-MM-ddTHH:mm:ssZ",
+    "streamings": [
+      {
+        "streamingName": "Netflix"
+      }
+    ],
+    "ratings": [
+      {
+        "comments": "Ótimo filme!",
+        "rating": 5
+      }
+    ]
+  }
