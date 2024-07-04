@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DataContext",
+    "\\Models",
+    "\\obj",
+    "\\Properties",
+    "\\Services",
+    "\\Services\\MovieService"
+  ],
+  "SelectedNode": "\\Services\\MovieService\\MovieService.cs",
+  "PreviewInSolutionExplorer": false
+}
