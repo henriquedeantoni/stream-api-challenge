@@ -60,7 +60,7 @@ Com auxilio do Swagger para conferencia dos Endpoints
   ```json
   {
     "title": "Nome do Filme",
-    "gender": 0,  // Enum Gender: 0 = Action, 1 = Comedy, 2 = Drama, etc.
+    "gender": "Action",
     "releaseDate": "yyyy-MM-ddTHH:mm:ssZ",
     "streamings": [
       {
@@ -87,7 +87,7 @@ Com auxilio do Swagger para conferencia dos Endpoints
   {
   "id": 1,
   "title": "Nome Atualizado do Filme",
-  "gender": 1,  // Enum Gender: 0 = Action, 1 = Comedy, 2 = Drama, etc.
+  "gender": "Action",
   "releaseDate": "2024-07-03T19:46:46.9900856Z",
   "streamings": [
     {
@@ -125,3 +125,11 @@ Com auxilio do Swagger para conferencia dos Endpoints
 - **Endpoint:** `/api/movies/comment?commentText={commentText}`
 - **Descrição:** Retorna filmes que contêm um texto específico em algum dos comentários das avaliações.
 - **Parametros:** commentText (string): Texto do comentário a ser pesquisado.
+
+  
+### 8. ** Filtrar Filmes por Ano de Lançamento**
+
+- **Método:** `GET`
+- **Endpoint:** `/api/movies/year/{year}`
+- **Descrição:** Retorna filmes lançados em um ano específico.
+- **Parametros:** year (int): Ano de lançamento do filme.
