@@ -74,3 +74,54 @@ Com auxilio do Swagger para conferencia dos Endpoints
       }
     ]
   }
+
+### 4. **Atualizar filme**
+
+- **Método:** `PUT`
+- **Endpoint:** `/api/movies/{id}`
+- **Descrição:** Atualiza as informações de um filme existente.
+
+  **Corpo da Requisição:**
+
+  ```json
+  {
+  "id": 1,
+  "title": "Nome Atualizado do Filme",
+  "gender": 1,  // Enum Gender: 0 = Action, 1 = Comedy, 2 = Drama, etc.
+  "releaseDate": "2024-07-03T19:46:46.9900856Z",
+  "streamings": [
+    {
+      "id": 1,
+      "streamingName": "Amazon Prime"
+    }
+  ],
+  "ratings": [
+    {
+      "id": 1,
+      "comments": "Atualização do comentário.",
+      "rating": 4
+    }
+  ]
+}
+
+### 5. **Excluir Filme**
+
+- **Método:** `DELETE`
+- **Endpoint:** `/api/movies/{id}`
+- **Descrição:** Remove um filme do banco de dados.
+  
+  
+### 6. ** Filtrar Filmes por Avaliação Média**
+
+- **Método:** `GET`
+- **Endpoint:** `/api/movies/averageRating?minAverageRating={minAverageRating}`
+- **Descrição:** Retorna filmes com média de avaliação maior ou igual a um valor específico.
+- **Parametros:** minAverageRating (double): Valor mínimo da média de avaliação.
+  
+
+### 7. ** Filtrar Filmes por Comentário**
+
+- **Método:** `GET`
+- **Endpoint:** `/api/movies/comment?commentText={commentText}`
+- **Descrição:** Retorna filmes que contêm um texto específico em algum dos comentários das avaliações.
+- **Parametros:** commentText (string): Texto do comentário a ser pesquisado.
