@@ -6,6 +6,12 @@ Esta API foi escrita em C# em .NET 6.0 com banco de dados SQL Server e verifica�
 A plicação se trata de uma API CRUD de gestão de filmes, onde pode-se criar, alterar, listar e deletar filmes do catálogo.
 A API também inclui funcionalidades para filtrar filmes por avaliações, comentários e ano de lançamento, e suporta a paginação dos resultados.
 
+
+
+https://github.com/henriquedeantoni/stream-api-challenge/assets/147777120/a2b63d10-b185-4a6a-b28c-7499f666e4f9
+
+
+
 ## Funcionalidades
 
 - **Gerenciamento de Filmes**:
