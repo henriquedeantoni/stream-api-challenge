@@ -19,3 +19,9 @@ A API também inclui funcionalidades para filtrar filmes por avaliações, comen
   - **Filtrar por Avaliação Média**: Obter filmes cuja média das avaliações seja maior ou igual a um valor específico.
   - **Filtrar por Comentário**: Buscar filmes que contenham um termo específico em suas avaliações.
   - **Filtrar por Ano de Lançamento**: Listar filmes lançados em um ano específico.
+ 
+## Começar
+
+Para começar basta clonar o repositório:
+
+  git clone https://github.com/henriquedeantoni/stream-api-challenge.git
