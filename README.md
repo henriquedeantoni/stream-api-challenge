@@ -8,7 +8,7 @@ A API também inclui funcionalidades para filtrar filmes por avaliações, comen
 
 
 
-https://github.com/henriquedeantoni/stream-api-challenge/assets/147777120/a2b63d10-b185-4a6a-b28c-7499f666e4f9
+https://www.dropbox.com/scl/fi/bpa4lceue0h2jyabk9qrt/VID_20240704_195701.mp4?rlkey=v9p33jw75f2gev9nhr8i9qilv&st=kibo4dk9&dl=0
 
 
 
