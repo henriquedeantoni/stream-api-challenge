@@ -117,7 +117,7 @@ Com auxilio do Swagger para conferencia dos Endpoints
 - **Descrição:** Remove um filme do banco de dados.
   
   
-### 6. ** Filtrar Filmes por Avaliação Média**
+### 6. **Filtrar Filmes por Avaliação Média**
 
 - **Método:** `GET`
 - **Endpoint:** `/api/movies/averageRating?minAverageRating={minAverageRating}`
@@ -125,7 +125,7 @@ Com auxilio do Swagger para conferencia dos Endpoints
 - **Parametros:** minAverageRating (double): Valor mínimo da média de avaliação.
   
 
-### 7. ** Filtrar Filmes por Comentário**
+### 7. **Filtrar Filmes por Comentário**
 
 - **Método:** `GET`
 - **Endpoint:** `/api/movies/comment?commentText={commentText}`
@@ -133,7 +133,7 @@ Com auxilio do Swagger para conferencia dos Endpoints
 - **Parametros:** commentText (string): Texto do comentário a ser pesquisado.
 
   
-### 8. ** Filtrar Filmes por Ano de Lançamento**
+### 8. **Filtrar Filmes por Ano de Lançamento**
 
 - **Método:** `GET`
 - **Endpoint:** `/api/movies/year/{year}`
